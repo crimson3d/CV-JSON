@@ -1,0 +1,135 @@
+{
+    "basics": {
+      "name": "José Antonio Sánchez Fuentes",
+      "label": "Front-End Developer",
+      "email": "crimson3d@gmail.com",
+      "phone": "679 51 06 42",
+      "url": "https://crimson3d.github.io/frontend-mentor-html-css-challenges",
+      "summary": "A summary of José Antonio Sánchez Fuentes",
+      "contact": {
+        "phone": "679510642",
+        "mail": "crimson3d@gmail.com",
+        "web": "https://crimson3d.github.io/frontend-mentor-html-css-challenges/",
+        "address": "calle Venezuela Nº24",
+        "city": "El Ejido",
+        "region": "Almería"
+      },
+      "profiles": [{
+        "network": "Github",
+        "username": "crimson3d",
+        "url": "https://github.com/crimson3d"
+      },
+      {
+        "network": "Frontend Mentor",
+        "username": "@crimson3d",
+        "url": "https://www.frontendmentor.io/profile/crimson3d"
+      }]
+    },
+    "work": [{
+      "name": "Caja Murcia",
+      "position": "Cajero",
+      "url": "https://www.cajamurcia.es",
+      "startDate": "12/11/2002",
+      "endDate": "13/02/2003",
+      "summary": "Practicas correspondientes al ciclo de grado medio de gestión administrativa, con valoración muy positiva por parte del tutor laboral."
+    },
+    {
+        "name": "GAME",
+        "position": "Jefe de Sección",
+        "url": "https://www.game.es",
+        "startDate": "2003",
+        "endDate": "2006",
+        "summary": "Empecé como ayudante de dependiente trabajando como refuerzo de plantilla en verano y navidad. Desde noviembre de 2005 hasta septiembre de 2006 trabaje continuo como jefe de sección."
+    },
+    {
+        "name": "DECORAEGIDO",
+        "position": "Creativo",
+        "startDate": "2006",
+        "endDate": "2007",
+        "summary": "Diseño de página web y labores creativas"
+    },
+    {
+        "name": "Café-Pub Business Center",
+        "position": "Camarero",
+        "startDate": "2007",
+        "endDate": "2016"
+    },
+    {
+        "name": "Wise Irrisystem",
+        "position": "Informatico",
+        "startDate": "2016",
+        "endDate": "2024",
+        "summary": "Responsable de la satisfacción del cliente y gestión de incidencias incluyendo la planificación de las mismas. También realicé tareas creativas."
+    }],
+    "educacion": [{
+      "institution": "Instituto de Educación Secundaria Murgis'",
+      "year": "2001-2003",
+      "area": "Gestión Adminstrativa",
+      "studyType": "Ciclo Formativo Grado Medio"
+    },
+    {
+      "institution": "Instituto de Educación Secundaria 'Abdera'",
+      "year": "2004-2006",
+      "area": "Gestión Sistemas Informáticos",
+      "studyType": "Ciclo Formativo Grado Superior"
+    }],
+    "certificates": [{
+      "name": "Introduction to web development course: HTML and CSS (1/2)",
+      "date": "2024-01-12",
+      "issuer": "Google",
+      "url": "https://skillshop.exceedlms.com/student/award/ELMJkkNzu2h3N5m363YyPqSQ"
+    },
+    {
+        "name": "Introduction to web development course: HTML and CSS (2/2)",
+        "date": "2024-01-17",
+        "issuer": "Google",
+        "url": "https://skillshop.exceedlms.com/student/award/W36SvAzEP4jzW29aBhXxqx5t"
+    },
+    {
+        "name": "Responsive Web Design",
+        "date": "2024-03-25",
+        "issuer": "freeCodeCamp",
+        "url": "https://www.freecodecamp.org/certification/Crimson3d/responsive-web-design"
+    },
+    {
+        "name": "Universidad Desarrollo Web - FrontEnd Web Developer",
+        "date": "2024-04-15",
+        "issuer": "Udemy",
+        "url": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-7525c3fb-04aa-46ee-8645-d3e1d4e72591.pdf"
+    },
+    {
+        "name": "Learn Sass Course",
+        "date": "2024-04-25",
+        "issuer": "Codecademy",
+        "url": "https://www.codecademy.com/profiles/css1388292506/certificates/eb1ffda40f347629dcef6de33d3f9741"
+    },
+    {
+        "name": "Learn JavaScript Course",
+        "date": "2024-04-30",
+        "issuer": "Codecademy",
+        "url": "https://www.codecademy.com/profiles/css1388292506/certificates/705dcb15de0da4dd9d9fc4f3274b430e"
+    }],
+    "skills": [{
+      "name": "Web Development",
+      "level": "Junior",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "SCSS",
+        "BEM",
+        "FIGMA"
+      ]
+    }],
+    "languages": [{
+      "language": "Inglés",
+      "fluency": "B1"
+    },
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    }],
+    "interests": [{
+      "name": "Apasionado de la tecnología, a principios de 2024 decidí un nuevo rumbo en mi vida y comencé a estudiar desarrollo web. "
+    }]
+  }
