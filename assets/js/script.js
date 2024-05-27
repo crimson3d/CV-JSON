@@ -1,9 +1,7 @@
-let cvData = {};
-
 async function fetchData() {
     try {
-        const response = await fetch("/assets/js/cv.json");
-        cvData = await response.json();
+        const response = await fetch("../data/cv.json");
+        const cvData = await response.json();
         document.getElementById("top").innerHTML = `
         <div class="top__img">
             <img src="./assets/images/IMG_6106.jpeg" alt="avatar" class="img__pic"/>
@@ -13,7 +11,7 @@ async function fetchData() {
             ${cvData?.basics?.label && `<h2 class="text__subtitle">${cvData.basics.label}</h2>`}
         </div>`;
         document.getElementById("contact").innerHTML = `
-        ${cvData.basics.contact.phone || cvData.basics.contact.mail || cvData.basics.contact.web || cvData.basics.contact.address && `
+        ${(cvData.basics.contact.phone || cvData.basics.contact.mail || cvData.basics.contact.web || cvData.basics.contact.address) && `
         <h3 class="section__title">CONTACTO</h3>
         ${cvData?.basics?.contact?.phone && `<div class="section__element">
             <div class="element__icon">
