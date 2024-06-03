@@ -1,6 +1,6 @@
 async function fetchData() {
     try {
-        const response = await fetch("../data/cv.json");
+        const response = await fetch("/data/cv.json");
         const cvData = await response.json();
 
         document.getElementById("top").innerHTML = `
