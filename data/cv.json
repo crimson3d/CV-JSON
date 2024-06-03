@@ -55,7 +55,8 @@
       "name": "Café-Pub Business Center",
       "position": "Camarero",
       "startDate": "2007",
-      "endDate": "2016"
+      "endDate": "2016",
+      "summary": ""
     },
     {
       "name": "Wise Irrisystem",
@@ -65,9 +66,9 @@
       "summary": "Responsable de la satisfacción del cliente y gestión de incidencias incluyendo la planificación de las mismas. También realicé tareas creativas."
     }
   ],
-  "educacion": [
+  "education": [
     {
-      "institution": "Instituto de Educación Secundaria Murgis'",
+      "institution": "Instituto de Educación Secundaria Murgis",
       "year": "2001-2003",
       "area": "Gestión Adminstrativa",
       "studyType": "Ciclo Formativo Grado Medio"

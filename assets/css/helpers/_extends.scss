@@ -1,0 +1,35 @@
+%responsiveIMG {
+    width: 100%;
+    height: auto;
+}
+
+%flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+%buttonStyle {
+    color: #1774EC;
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #1774EC;
+}
+
+%formatStylesAgent {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+%bluePill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue;
+    color: $white;
+    padding: 0.3rem 0.5rem;
+    max-width: auto;
+    border-radius: 20px;
+}

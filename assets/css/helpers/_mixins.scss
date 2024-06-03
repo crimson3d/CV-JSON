@@ -1,0 +1,5 @@
+@mixin font($weight, $size: 16px) {
+    font-size: $size;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: $weight;
+}
