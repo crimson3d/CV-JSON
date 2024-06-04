@@ -153,5 +153,3 @@ async function fetchData() {
 };
 
 document.addEventListener("DOMContentLoaded", fetchData);
-
-
