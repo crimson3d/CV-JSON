@@ -215,12 +215,9 @@
 }
 @media only screen and (max-width: 970px) {
   .main .main__container {
-    padding: 3rem 8rem;
-    column-gap: 1rem;
-    grid-template-areas: "top" "contact" "education" "certificates" "skills" "languages" "work" "about";
-    grid-template-columns: 1fr;
-    grid-template-rows: min-content;
-    grid-auto-rows: min-content;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
   }
   .main .main__container .container__top {
     gap: 6rem;
@@ -288,11 +285,9 @@
     border: 1px solid #1774EC;
   }
   .main .main__container .hide {
-    display: none;
-    padding: 0 18px;
-    background-color: white;
-    display: none;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease;
   }
 }
 @media only screen and (max-width: 350px) {
