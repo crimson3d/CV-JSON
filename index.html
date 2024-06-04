@@ -13,12 +13,27 @@
     <section class="main__container">
         <div class="container__top" id="top"></div>
         <div class="container__section contact" id="contact"></div>
-        <div class="container__section skills" id="skills"></div>
-        <div class="container__section languages" id="languages"></div>
+        <button class="accordion">Habilidades</button>
+        <div class="container__section--skills hide">
+            <div class="section__skills" id="skills"></div>
+        </div>
+        <button class="accordion">Idiomas</button>
+        <div class="container__section--languages hide">
+            <div class="section__languages" id="languages"></div>
+        </div>
         <div class="container__section about" id="about"></div>
-        <div class="container__section study" id="study"></div>
-        <div class="container__section certificates" id="certificates"></div>
-        <div class="container__section work" id="work"></div>
+        <button class="accordion">Formación</button>
+        <div class="container__section--study hide">
+            <div class="section__study" id="study"></div>
+        </div>
+        <button class="accordion">Certificados</button>
+        <div class="container__section--certificates hide">
+            <div class="section__certificates" id="certificates"></div>
+        </div>
+        <button class="accordion">Experiencia Laboral</button>
+        <div class="container__section--work hide">
+            <div class="section__work" id="work"></div>
+        </div>
     </section>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/mblMenu.js"></script>

@@ -67,87 +67,98 @@
                 gap: 1rem;
             }
         }
-        .skills {
+        .container__section--skills {
             grid-area: skills;
-            @extend %flexColumn;
-            gap: 1rem;
-            .section__set {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 0.5rem;
-                .set__element {
-                   @extend %bluePill;
-                   @include font(300);
+            .section__skills {
+                @extend %flexColumn;
+                gap: 1rem;
+                .section__set {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 0.5rem;
+                    .set__element {
+                       @extend %bluePill;
+                       @include font(300);
+                    }
                 }
             }
         }
-        .languages {
+        .container__section--languages {
             grid-area: languages;
-            @extend %flexColumn;
-            gap: 1rem;
+            .section__languages {
+                @extend %flexColumn;
+                gap: 1rem;
+            }
         }
+       
         .about {
             grid-area: about;
             @extend %flexColumn;
             gap: 1rem;
         }
-        .study {
+        .container__section--study {
             grid-area: education;
-            @extend %flexColumn;
-            gap: 1rem;
-            .section__info {
-                display: flex;
-                align-items: center;
-                .info__years {
-                    @extend %bluePill;
-                }
-            }
-            .text__education__institution {
-                color: $lightGrey;
-               }
-        }
-        .certificates {
-            grid-area: certificates;
-            @extend %flexColumn;
-            gap: 1rem;
-            .text__bottom {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                .bottom__text {
-                    font-weight: 400;
-                }
-                .bottom__btn {
-                    @extend %buttonStyle;
-                   }
-                .bottom__btn:active {
-                    color: #666;
-                    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
-                }
-            }
-        }
-        .work {
-            grid-area: work;
-            @extend %flexColumn;
-            @include font(300);
-            gap: 1rem;
-            .section__work {
+            .section__study {
                 @extend %flexColumn;
-                gap: 0.5rem;
-                .work__text {
+                gap: 1rem;
+                .section__info {
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
-                    .text__date {
+                    .info__years {
                         @extend %bluePill;
                     }
                 }
+                .text__education__institution {
+                    color: $lightGrey;
+                   }
             }
-            .work__middle {
-                font-weight: 400;
+        }
+        .container__section--certificates {
+            grid-area: certificates;
+            .section__certificates {
+                @extend %flexColumn;
+                gap: 1rem;
+                .text__bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .bottom__text {
+                        font-weight: 400;
+                    }
+                    .bottom__btn {
+                        @extend %buttonStyle;
+                       }
+                    .bottom__btn:active {
+                        color: #666;
+                        box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+                    }
+                }
             }
-            .work__bottom {
-                color: $lightGrey;
+        }
+        .container__section--work {
+            grid-area: work;
+            .section__work {
+                @extend %flexColumn;
+                @include font(300);
+                gap: 1rem;
+                .work__card {
+                    @extend %flexColumn;
+                    gap: 0.5rem;
+                    .card__text {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .text__date {
+                            @extend %bluePill;
+                        }
+                    }
+                }
+                .card__middle {
+                    font-weight: 400;
+                }
+                .card__bottom {
+                    color: $lightGrey;
+                }
             }
         }
         .section__title {
@@ -171,7 +182,9 @@
         .icon {
             max-width: 2rem;
         }
-
+        .accordion {
+            display: none;
+        }
     }
 }
 
@@ -295,10 +308,29 @@
                     }
                 }
             }
+            .accordion {
+                display: block;
+                padding: 18px;
+                text-align: center;
+                transition: 0.5s;
+                color: #1774EC;
+                background-color: whiter;
+                cursor: pointer;
+                text-decoration: none;
+                border-radius: 5px;
+                border: 1px solid #1774EC;
+            }
+            .hide {
+               display: none;
+               padding: 0 18px;
+               background-color: white;
+               display: none;
+               overflow: hidden;
+            }
         }
     }
 }
- 
+
 @media only screen and (max-width: 350px) {
     .main {
         .main__container {
