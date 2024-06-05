@@ -19,19 +19,19 @@ async function fetchData() {
             <div class="element__icon">
                 <img src="./assets/images/mobile-svgrepo-com.svg" alt="mobile-icon" class="icon" />
             </div>
-            <p class="section__text">${cvData?.basics?.contact?.phone}</p>
+            <a href="tel:+34679510642" class="section__text">${cvData?.basics?.contact?.phone}</a>
         </div>`}
         ${cvData?.basics?.contact?.mail && `<div class="section__element">
             <div class="element__icon">
                 <img src="./assets/images/envelope-svgrepo-com.svg" alt="mail-icon" class="icon" />
             </div>
-            <p class="section__text">${cvData?.basics?.contact?.mail}</p>
+            <a href="mailto:crimson3d@gmail.com" class="section__text">${cvData?.basics?.contact?.mail}</a>
         </div>`}
         ${cvData?.basics?.contact?.web && `<div class="section__element">
             <div class="element__icon">
                 <img src="./assets/images/web-svgrepo-com.svg" alt="web-icon" class="icon" />
             </div>
-            <p class="section__text">${cvData?.basics?.contact?.web}</p>
+            <a href="https://crimson3d.github.io/frontend-mentor-html-css-challenges/" target="_blank" class="section__text">${cvData?.basics?.contact?.web}</a>
         </div>`}
         ${cvData?.basics?.contact?.address && cvData?.basics?.contact?.city && cvData?.basics?.contact?.region && `<div class="section__element">
             <div class="element__icon">

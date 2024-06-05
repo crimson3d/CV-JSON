@@ -50,7 +50,6 @@
   row-gap: 2rem;
   grid-template-areas: ". top top ." ". contact education ." ". skills certificates ." ". languages certificates ." ". about certificates ." ". . work .";
   grid-template-columns: 1fr 1fr 2fr 1fr;
-  grid-template-rows: auto auto auto min-content min-content auto;
   grid-auto-rows: min-content;
 }
 .main .main__container .container__top {
