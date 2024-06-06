@@ -27,9 +27,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1774EC;
-  color: white;
-  padding: 0.3rem 0.5rem;
+  border: 1px solid #1774EC;
+  color: #1774EC;
+  padding: 0.4rem 0.8rem;
   max-width: auto;
   border-radius: 20px;
 }
@@ -106,7 +106,7 @@
 .main .main__container .container__section--skills .section__skills .section__set .set__element {
   font-size: 16px;
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 .main .main__container .container__section--languages {
   grid-area: languages;
@@ -127,6 +127,9 @@
 .main .main__container .container__section--study .section__study .section__info {
   display: flex;
   align-items: center;
+}
+.main .main__container .container__section--study .section__study .section__info .info__years {
+  font-size: 14px;
 }
 .main .main__container .container__section--study .section__study .text__education__institution {
   color: #999BA0;
@@ -165,6 +168,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.main .main__container .container__section--work .section__work .work__card .card__text .text__date {
+  font-size: 14px;
 }
 .main .main__container .container__section--work .section__work .card__middle {
   font-weight: 400;

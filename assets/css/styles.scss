@@ -78,7 +78,7 @@
                     gap: 0.5rem;
                     .set__element {
                        @extend %bluePill;
-                       @include font(300);
+                       @include font(400);
                     }
                 }
             }
@@ -106,6 +106,7 @@
                     align-items: center;
                     .info__years {
                         @extend %bluePill;
+                        font-size: 14px;
                     }
                 }
                 .text__education__institution {
@@ -150,6 +151,7 @@
                         justify-content: space-between;
                         .text__date {
                             @extend %bluePill;
+                            font-size: 14px;
                         }
                     }
                 }
