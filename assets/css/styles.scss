@@ -18,13 +18,14 @@
         margin: 0 2rem;
         display: grid;
         column-gap: 6rem;
-        row-gap: 2rem;
-        grid-template-areas: ". top top ."
-                             ". contact education ."
-                             ". skills certificates ."
-                             ". languages certificates ."
-                             ". about certificates ."
-                             ". . work .";
+        row-gap: 3rem;
+        grid-template-areas:
+            ". top top ."
+            ". contact education ."
+            ". skills certificates ."
+            ". languages certificates ."
+            ". about certificates ."
+            ". . work .";
         grid-template-columns: 1fr 1fr 2fr 1fr;
         // grid-template-rows: auto auto auto min-content min-content auto;
         grid-auto-rows: min-content;
@@ -37,14 +38,14 @@
             gap: 14rem;
             align-items: center;
             padding-bottom: 2rem;
-           .img__pic {
+            .img__pic {
                 max-width: 12rem;
                 border-radius: 100%;
                 @extend %responsiveIMG;
                 aspect-ratio: 1;
                 object-fit: cover;
             }
-            .top__text{
+            .top__text {
                 @extend %flexColumn;
                 gap: 1rem;
                 .text__title {
@@ -65,6 +66,18 @@
                 display: flex;
                 align-items: center;
                 gap: 1rem;
+                .element__icon {
+                    display: flex;
+                    max-width: 3rem;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100%;
+                    background-color: $blue;
+                    padding: 0.5rem;
+                    .icon {
+                        max-width: 1rem;
+                    }
+                }
             }
         }
         .container__section--skills {
@@ -77,8 +90,8 @@
                     grid-template-columns: 1fr 1fr 1fr;
                     gap: 0.5rem;
                     .set__element {
-                       @extend %bluePill;
-                       @include font(400);
+                        @extend %bluePill;
+                        @include font(400);
                     }
                 }
             }
@@ -90,7 +103,7 @@
                 gap: 1rem;
             }
         }
-       
+
         .about {
             grid-area: about;
             @extend %flexColumn;
@@ -111,7 +124,22 @@
                 }
                 .text__education__institution {
                     color: $lightGrey;
-                   }
+                }  
+                }
+                .section__top {
+                    .top__icon {
+                        display: flex;
+                        max-width: 3rem;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100%;
+                        background-color: $blue;
+                        padding: 0.5rem;
+                        .icon {
+                            max-width: 1rem;
+                        }
+                    }
+                }
             }
         }
         .container__section--certificates {
@@ -128,10 +156,26 @@
                     }
                     .bottom__btn {
                         @extend %buttonStyle;
-                       }
+                    }
                     .bottom__btn:active {
                         color: #666;
-                        box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+                        box-shadow:
+                            inset 4px 4px 12px #c5c5c5,
+                            inset -4px -4px 12px #ffffff;
+                    }
+                }
+                .section__top {
+                    .top__icon {
+                        display: flex;
+                        max-width: 3rem;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100%;
+                        background-color: $blue;
+                        padding: 0.5rem;
+                        .icon {
+                            max-width: 1rem;
+                        }
                     }
                 }
             }
@@ -161,6 +205,20 @@
                 .card__bottom {
                     color: $lightGrey;
                 }
+                .section__top {
+                    .top__icon {
+                        display: flex;
+                        max-width: 3rem;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100%;
+                        background-color: $blue;
+                        padding: 0.5rem;
+                        .icon {
+                            max-width: 1rem;
+                        }
+                    }
+                }
             }
         }
         .section__title {
@@ -181,28 +239,26 @@
             gap: 1rem;
             align-items: center;
         }
-        .icon {
-            max-width: 2rem;
-        }
+
         .accordion {
             display: none;
         }
     }
-}
+
 
 @media only screen and (max-width: 1300px) {
     .main {
-        .main__container{
+        .main__container {
             padding-top: 5rem;
             padding-bottom: 5rem;
             margin: 0 1rem;
-            row-gap: 4rem;
-            grid-template-areas: "top top"
-                                 "contact education"
-                                 "skills certificates"
-                                 "languages certificates"
-                                 "about certificates"
-                                 "work";
+            grid-template-areas:
+                "top top"
+                "contact education"
+                "skills certificates"
+                "languages certificates"
+                "about certificates"
+                "work";
             grid-template-columns: 1fr 2fr;
             grid-template-rows: min-content min-content;
             grid-auto-rows: min-content;
@@ -212,9 +268,8 @@
 
 @media only screen and (max-width: 970px) {
     .main {
-        .main__container{
+        .main__container {
             padding: 3rem 4rem;
-            gap: 1rem;
             display: flex;
             flex-direction: column;
             .container__top {
@@ -223,7 +278,6 @@
                 }
                 gap: 6rem;
                 padding-bottom: 1rem;
-              
             }
             .study {
                 gap: 1.5rem;
@@ -253,23 +307,13 @@
     }
 }
 
-
 @media only screen and (max-width: 640px) {
     .main {
-        .main__container{
+        .main__container {
             padding: 3rem 1rem;
-            column-gap: 0;
-            grid-template-areas: "top"
-                                 "contact"
-                                 "education"
-                                 "certificates"
-                                 "skills"
-                                 "languages"
-                                 "work"
-                                 "about";
-            grid-template-columns: 1fr;
-            grid-template-rows: min-content;
-            grid-auto-rows: min-content;
+            column-gap: 6rem;
+        row-gap: 3rem;
+
             .container__top {
                 .img__pic {
                     max-width: 9rem;
@@ -306,12 +350,12 @@
                 padding: 18px;
                 text-align: center;
                 transition: 0.5s;
-                color: #1774EC;
+                color: #1774ec;
                 background-color: white;
                 cursor: pointer;
                 text-decoration: none;
                 border-radius: 5px;
-                border: 1px solid #1774EC;
+                border: 1px solid #1774ec;
                 font-family: "IBM Plex Sans", sans-serif;
                 font-size: 18px;
                 text-transform: uppercase;
@@ -349,7 +393,7 @@
             .certificates {
                 .text__bottom {
                     .bottom__btn {
-                        padding: 0.2rem 0.4rem;;
+                        padding: 0.2rem 0.4rem;
                     }
                 }
             }
